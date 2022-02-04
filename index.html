@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h1>Head</h1>
+  </body>
+  <script>
+    // var A = 5 ;
+    // var B = '5' ;
+
+    var camera = {
+      Model: "Hikrobot",
+      Type: "USB",
+      USD: 3000,
+      Bath: function() {return this.USD * 30},
+      price: function (e) {
+        return e * this.USD;
+      },
+    };
+
+    // var A = "5";
+
+    // if (A == 5) {
+    //   console.log("A is 5");
+    // } else if (A == 6) {
+    //   console.log("A is not 5");
+    // } else if (A == 7) {
+    //   console.log("A is not 5");
+    // } else {
+    //   console.log("A is not 5");
+    // }
+    // for (var i = 0; i < 5 ;i++) {   
+    //     console.log(i)
+    // }
+    // console.log(camera.Model)
+    // // for with object 
+    // for(var i in camera) {
+    //     console.log(camera[i])
+    // }
+
+    // switch (A) {
+    //   case 5:
+    //     console.log(A);
+    //   case 6:
+    //     console.log(A);
+    //   case 7:
+    //     console.log(A);
+    // }
+    //Scrope function 
+    
+    // let , const ,var 
+
+    var A = 5; 
+    const T = 5; 
+    console.log(A)
+    let C = 1
+    function sumNumber(e) {
+        let B = 5
+        console.log("B1" ,B)
+        B = C +1 
+        console.log("C -",C)
+        console.log("B2" ,B)
+        A = A + B;
+        console.log("B3" ,B)
+    }
+    sumNumber(A)
+    console.log(A)
+    console.log(camera['Model'])
+    try {
+        console.log(B)
+    } catch (error) {
+        console.log("eror B")
+    }
+    console.log(camera.Bath)
+  </script>
+</html>
